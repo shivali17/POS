@@ -1,0 +1,30 @@
+
+<h1>Customer Invoice Reciept</h1>
+
+<table>
+  <tr>
+    <th>S.No</th>
+    <th>Items</th>
+    <th>Quantity</th>
+    <th>Price(per item)</th>
+    <th>Total Price</th>
+  </tr>
+  <tr *ngFor="let item of buyersList" >
+    <td>{{item.no}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.quantity}}</td>
+    <td>{{item.price}}</td>
+    <td>{{item.price * item.quantity}}</td>
+  </tr>
+
+    <td>Total Amount</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      {{totalPrice}}
+    </td>
+
+</table>
+
+<h3>Thanks For Visiting us</h3>

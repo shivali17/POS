@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule, Routes} from '@angular/router';
+import { BillComponent } from './bill/bill.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MainComponent,
+    BillComponent,
     FirstpageComponent,
 
   ],
