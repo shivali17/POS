@@ -6,9 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule, Routes} from '@angular/router';
+import { FirstpageComponent } from './firstpage/firstpage.component';
 
 const routes: Routes = [
-
+  {
+    path: '',
+    component: FirstpageComponent
+  },
   {
     path: 'main-page/:userName',
     component: MainComponent
@@ -19,6 +23,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MainComponent,
+    FirstpageComponent,
 
   ],
   imports: [
