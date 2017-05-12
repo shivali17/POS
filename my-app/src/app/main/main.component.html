@@ -1,0 +1,54 @@
+
+
+
+
+<div *ngIf="display" class="container">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <a class="navbar-brand">hello {{userName}}</a>
+  </nav>
+
+  <div>
+    <div class="row">
+      <div class="show-button-main" *ngFor="let item of courses">
+        <button type="button" (click)="selectCategory(item)" class="btn btn-primary" [class.btn-success]="activeCategory == item.category">{{item.name}}</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="show-button-items" *ngFor="let item of itemList">
+        <button type="button" (click)="selectItem(item)" class="btn btn-default" >{{item.name}}</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-items">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let item of buyList">
+        {{item.name}} - Rs.{{item.price}} * {{item.quantity}}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-amount">
+    Total Amount:  {{totalPrice}}
+  </div>
+
+
+  <div class="container-class">
+    <h1 class="cart">Cart</h1>
+    <div class="row">
+      <div class="show-button-pay">
+        <button type="button" (click)="billPay()" class="btn btn-success">Pay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="billdisplay">
+     <app-bill [buyersList]="buyList" [totalPrice]="totalPrice"></app-bill>
+</div>
