@@ -1,7 +1,151 @@
-.show-button-main{position: relative;top:100px;padding-left:50px;height: 50px;float: right;right:500px}
-.show-button-items{position: relative;top:100px;height: 50px;float: left;left:350px;padding-right:20px}
-.container-class{position: absolute;width:300px;height: 500px;border: 2px solid black;top:60px;background-color:#d6ebd0;z-index:-1}
-.show-button-pay{position: fixed;top:480px;height: 50px;float: left;left:280px}
-.container-items{position: relative;top:60px;height: 50px;float: left;left:60px;width:150px}
-.container-amount{position: fixed;top:450px;height: 50px;float: left;left:150px}
-.cart{position: relative;left:100px;width:60px;}
+.show-button-items {
+    display: inline-block;
+    font-size: 23px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #660c0c;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0 5px #b3b3b3;
+    top: 207px;
+    margin: 63px 94px -26px 261px;
+    line-height: 1.8px;
+    float: right;
+    width: 200px;
+    height: 89px;
+}
+
+.show-button-items:hover {
+    background-color: #3e8e41
+}
+
+img {
+    top: 100px;
+    opacity: 0.5;
+    height: 120px;
+    width: 150px;
+    position: relative;
+    animation: myfirst 2s linear infinite alternate;
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 200px;
+        top: 0px;
+    }
+}
+
+.show-button-items:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #4CAE29;
+    transform: translateY(4px);
+}
+
+.container-class1 {
+    position: fixed;
+    width: 380px;
+    height: 615px;
+    border: 5px solid goldenrod;
+    top: 50px;
+    background-color: #d6ebd0;
+    z-index: -1
+}
+
+.container-class {
+    position: fixed;
+    width: 1300px;
+    height: 615px;
+    border: 5px solid goldenrod;
+    top: 50px;
+    background-color: #d6ebd0;
+    z-index: -1
+}
+
+.show-button-pay {
+    position: fixed;
+    top: 600px;
+    height: 50px;
+    float: left;
+    left: 300px
+}
+
+.container-items {
+    position: fixed;
+    top: 130px;
+    height: 50px;
+    float: left;
+    left: 30px;
+    width: 300px;
+    margin: 10px 100px 10px 10px;
+}
+
+.container-amount {
+    position: fixed;
+    top: 610px;
+    height: 50px;
+    float: left;
+    left: 60px
+}
+
+.cart {
+    position: fixed;
+    left: 150px;
+    width: 60px;
+}
+
+.show-button-main {
+    display: inline-block;
+    padding: 15px 100px;
+    font-size: 38px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #660c0c;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #b3b3b3;
+    position: relative;
+    top: 20px;
+    padding-left: 50px;
+    height: 50px;
+    float: right;
+    right: 40px;
+    height: 100px;
+    width: 270;
+}
+
+.show-button-main:hover {
+    background-color: #07255f;
+}
+
+.show-button-main:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #4CAE29;
+    transform: translateY(4px);
+}
+
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}

@@ -1,19 +1,15 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <a class="navbar-brand" href="#">FOOD SERVICE</a>
+    <a class="navbar-brand" href="#"><b>FOOD SERVICE</b></a>
 </nav>
 
-<br>
-<br>
-<br>
-
-<div class="container">
-  <div class="jumbotron">
-    <div class="align1">
-      <h2 class="text1"> <b> HELLO !!</b></h2>
-      <input type="text" ng-model="name" placeholder="enter your name" #name>
-      <button routerLink="/main-page" routerLinkActive="active" type="button" class="btn btn-success" (click)="onUserClick(name.value)">ENTER</button><br>
-      <img src="../src/assets/img/food.jpeg" class="img-responsive" alt="Food img" width="1200" height="100">
+<body class="responsive" style="height:660px; width:1920px;">
+    <div class="container">
+        <div class="text1">
+            <p style="color:white;font-size: 36px;margin: 180px 200px 10px -618px;">
+                <b> Browse your food</b>
+            </p>
+            <input class="myDIV" type="text" ng-model="name" placeholder="Enter your name" #name>
+            <button style="text-align:center" class="show-button-main" (click)="onUserClick(name.value)">ENTER</button><br>
+        </div>
     </div>
-  </div>
-</div>
-<!-- <app-bill  [totalPrice]="totalPrice" ></app-bill> -->
+</body>

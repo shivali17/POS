@@ -65,6 +65,7 @@ export class MainComponent implements OnInit {
     billPay(){
       this.billdisplay = true;
       this.display = false;
+      window.print();
     }
 
 }

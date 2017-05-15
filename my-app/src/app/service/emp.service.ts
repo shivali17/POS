@@ -15,8 +15,8 @@ export class Empservice implements OnInit {
 
   constructor(private _http:Http) { }
 
-  private url:string = "http://localhost:2000/api/app/getCategory";
-  private geturl:string = "http://localhost:2000/api/app/getItems";
+  private url:string = "http://localhost:2000/api/app/get_categories";
+  private geturl:string = "http://localhost:2000/api/app/get_items";
 
   getCategories() {
         return this._http.get(this.url)
