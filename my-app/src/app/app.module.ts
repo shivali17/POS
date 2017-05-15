@@ -8,17 +8,9 @@ import { MainComponent } from './main/main.component';
 import { RouterModule, Routes} from '@angular/router';
 import { BillComponent } from './bill/bill.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
+import { routes } from './app.routes';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: FirstpageComponent
-  },
-  {
-    path: 'main-page/:userName',
-    component: MainComponent
-  }
-]
+
 
 @NgModule({
   declarations: [
